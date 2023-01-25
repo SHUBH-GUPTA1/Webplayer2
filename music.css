@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+html{
+    font-size: 64%;
+    font-family: 'Raleway', sans-serif;
+}
+.spotify-logo{
+    width:132px;
+    height:50px;
+    margin:20px 0;
+}
+nav { 
+    height: 120px; 
+    background-color: black; 
+} 
+header { 
+    height: 805px;  
+    background-color: greenyellow; 
+    background: linear-gradient(#1DB954 -80%,#191414 240%);
+}
+  
+nav ul{
+    width:500px;
+    height:0px;
+    list-style-type:none;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    font-size: 15px;
+    font-weight: bold;
+}
+ 
+nav a{
+    color:white;
+    text-decoration: none;
+}
+
+nav li{
+    font-weight: bold;
+}
+
+nav a:hover{
+    color:#1bd954;
+}
+
+.index-homepage .wrap {
+    background-color: #f037a5;
+    background:-webkit-gradient(linear,left top,left bottom,color-stop(-80%,#1DB954),color-stop(240%,#191414));
+    background:  linear-gradient(#1DB954 -80%,#191414 240%);
+  }
+
+  .hero-img {
+    height:900px;
+    margin: 0 auto;
+    background-image: url(https://t3.ftcdn.net/jpg/05/24/27/88/360_F_524278838_KRh51xBzj8UWZFu0ex9nPMIYeTC70e9N.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+  }
+
+  #capital {
+    width: inherit;
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 900;
+    letter-spacing: -.04em;
+    line-height: 1.15;
+    margin-bottom: 20px;
+  }
+
+  header .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .btn-spotify {
+    width: 260px;
+    margin: 0 auto;
+    color: white;
+    background-color: #1db954;
+    padding: 18px 42px 18px;
+    border: 0px;
+    border-radius: 500px;
+    margin-top: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 2px;
+    transition-duration: .3s;
+  }
+
+  .btn-spotify:hover {
+    cursor: pointer;
+    background-color: #1ed760;
+  }
+
+.main_container{
+    width: 85vw;
+    height:20vw;
+    /* background-color: greenyellow;
+    background: linear-gradient(#1DB954 -80%,#191414 240%); */
+    display: grid;
+    place-items:center;
+}
+
+.music_container{
+    width: 35rem;                                        /*1rem=10px*/
+    height:55rem;
+    background-image:url(https://images.pond5.com/spotify-logo-neon-sign-footage-105381241_iconl.jpeg);
+    border-radius: 2rem;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0,0,0,0.2);  /*horizontal,vertical,blur,spread*/
+    padding:1rem;
+    text-align:center;
+}
+
+.music_container #title{
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    word-spacing:0.5rem;
+    color:#171717;
+    margin: 2rem 0 0.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.3);
+}   
+
+.music_container #artist{
+    color:#cccaca;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    font-weight: 300;
+}
+
+.img_container{
+    width: 25rem;
+    height: 25rem;
+    margin: auto;
+}
+
+img{
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0,0,0,0.4);
+}
+
+.music_control{
+    width:20rem;
+    display:flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 2rem;
+    align-items: center;
+    height: 10rem;
+}
+
+.music_control .fa-solid{
+    color: #111111;
+    font-size:2rem;
+    cursor:pointer;
+    filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0,0,0,0.4));
+}
+
+.music_control .main_button{
+    width:5rem;
+    height:5rem;
+    border-radius: 50%;
+    background-color: #111;
+    color:#f6f6f6;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.music_control .fa-solid:hover{
+    color: crimson;
+}
+
+.music_control .fa-play:hover{
+    background-color: #f6f6f6;
+    color:crimson;
+    box-shadow: 0 1rem 2rem 0.2rem rgba(0,0,0,0.4);
+}
+
+.anime{
+    animation: rotateplayer 3s linear infinite;
+}
+
+@keyframes rotateplayer{
+    from { 
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+.progressbar_container{
+    width:100%;
+    height:0px;
+    padding: 0rem 0;
+    margin-top: 1rem;
+    background: black;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+
+#progress_div {
+    appearance: none;
+    height: 5px;
+    background: #32CD32;
+    width: 100%;
+    outline: none;
+    border-radius: 30px;
+  }
+  
+.progress{
+    /* position:absolute; */
+    border-radius: 5px;
+    width:1%;
+    height:100%;
+    background-color: #000;
+    transition: width 0.1s linear;
+    line-height: 32px;
+}
+
+.progress_duration_meter{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+.logo{
+    height:50px;
+    width:132px;
+    margin:20px 0;
+   border-radius: none;
+}
+
+ul li a{
+    color:white;
+    font-size:16px;
+    text-decoration:none;
+}
+ul li a:hover{
+    color:rgb(120, 217, 120);
+}
+ul{
+    list-style: none;
+}
+.first{
+    color:rgb(182,177,177);
+    font-size:16px;
+}
+footer { 
+    position:relative;
+    min-height: 60vh; 
+    background-color: #000; 
+    display:grid;
+    width:100%;
+    padding: 4rem;
+    grid-template-columns: 4fr 1fr;
+    place-items:center;
+    align-items: flex-start;
+}
+footer *{
+    text-decoration: none;
+    color: #fff;
+}
+.foot_container{
+    display:flex;
+}
+.first{
+opacity:.4;
+text-transform:uppercase;
+font-weight: 100;
+letter-spacing: .05rem;
+}
+
+.column{
+    margin-left:3rem;
+    display:flex;
+    align-items: flex-start;
+    column-gap: 3rem;
+}
+
+.column > div{
+    display: flex;
+    flex-direction: column;
+}
+.column a,
+.column .first{
+    margin:.5rem 0;
+    font-size:1.5rem;
+}
+
+.item-5{
+    display: flex;
+    margin-right: 10rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.item-5 a{
+    width:3.5rem;
+    height:3.5rem;
+    background-color: #222326;
+    border-radius: 50%;
+    margin:0.5rem;
+    font-size:1.5rem;
+}    
+
+.other_links,
+.copyright{
+    opacity: .5;
+    font-size: .7rem;
+    margin-top: 6rem;
+    font-size: 1.5rem;
+}
+
+.other_links a {
+    margin: 0 .5rem;
+}
+
+.copyright {
+    margin-top: 5rem;
+    text-align: right;
+}
+.copyright a {
+    display: block;
+    margin-bottom: .5rem;
+}
